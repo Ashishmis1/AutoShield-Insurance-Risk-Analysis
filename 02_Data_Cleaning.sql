@@ -1,0 +1,14 @@
+SET SQL_SAFE_UPDATES = 0;
+UPDATE silver_insurance_data
+SET COVERAGE_TYPE = 'Third-Party Liability'
+WHERE INSURED_VALUE = '0';
+UPDATE silver_insurance_data
+SET COVERAGE_TYPE = 'Comprehensive'
+WHERE INSURED_VALUE != '0' AND INSURED_VALUE != '';
+UPDATE silver_insurance_data
+SET EFFECTIVE_YR = REGEXP_REPLACE(EFFECTIVE_YR, '[^0-9]', '')
+WHERE EFFECTIVE_YR REGEXP '[^0-9]';
+UPDATE silver_insurance_data
+SET CLAIM_PAID = '0'
+WHERE CLAIM_PAID = '' OR CLAIM_PAID IS NULL;
+SET SQL_SAFE_UPDATES = 1;
