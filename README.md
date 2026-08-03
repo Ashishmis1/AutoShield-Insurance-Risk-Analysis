@@ -7,7 +7,7 @@ Auto insurance companies bleed revenue when they misprice policies for high-risk
 I engineered a custom SQL data pipeline and an interactive Power BI dashboard to give underwriters and risk managers immediate visibility into portfolio performance. 
 
 By filtering the data across policy years and coverage types, the analysis revealed:
-* **Severe Risk Outliers:** Uncovered specific manufacturers (e.g., "LIZE") generating massive claims against minimal premium collection, resulting in unsustainable loss ratios. 
+* **Severe Risk Outliers:** Uncovered specific manufacturers (e.g.,  "LIZE") generating massive claims against minimal premium collection, resulting in unsustainable loss ratios. 
 * **100% Profit Retention Assets:** Identified vehicle categories (like specific motorcycle models) that generated consistent premium revenue with zero claims filed, highlighting areas for aggressive market expansion.
 * **Coverage Profitability:** Quantified the exact margin differences between Comprehensive and Third-Party policies to guide future pricing strategies.
 
